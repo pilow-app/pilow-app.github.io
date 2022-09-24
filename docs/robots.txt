@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reedxiao.github.io/plw/sitemap.xml.gz
