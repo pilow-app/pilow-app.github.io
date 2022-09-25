@@ -1330,7 +1330,13 @@ h1 {
     display: none !important;
   }
 }
-
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.font.im/s/ibmplexmono/v12/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2)
+    format("woff2");
+}
 .logofont {
   font-family: "IBM Plex Mono", monospace;
 }
