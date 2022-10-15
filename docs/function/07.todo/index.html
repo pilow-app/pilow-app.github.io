@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.717345574641">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.719136532093">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.717345574641" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.719136532093" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.717345574641" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.719136532093" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.717345574641" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.719136532093" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -55,7 +55,7 @@
                                 <img class="max-h-10 hidden dark:inline-block" src="../../static/favicon.ico">
                             </span>
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Pilow</span>
-                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v0.07</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v0.08</span>
                     </div>
         
                     <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -226,7 +226,23 @@
         <span>集中显示待办任务</span>
     </h2>
 </doc-anchor-target>
-<p>在主页，点击左上角「待办」，即可以显示所有包含 <em>未完成待办任务</em> 的 Block。</p>
+<doc-anchor-target id="方式1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#方式1">#</doc-anchor-trigger>
+        <span>方式1</span>
+    </h3>
+</doc-anchor-target>
+<p>在主页，点击左上角「待办」，即可以显示所有包含 <em>未完成待办任务</em> 的 Block。这种方式下，所有内容仍在主页面显示，并且以 Block 单位显示。</p>
+<doc-anchor-target id="方式2待办抽屉">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#方式2待办抽屉">#</doc-anchor-trigger>
+        <span>方式2：「待办抽屉」</span>
+    </h3>
+</doc-anchor-target>
+<p>进入：在主按钮选择「待办抽屉」或使用快捷键<code v-pre>Command/Ctrl+E</code>。</p>
+<p>此时可以看到右侧出现所有未完成的细项，这里并没有以 Block 为单位，而是采用了更小的粒度也即 Markdown 中的 Checklist。</p>
+<p>选择相应的待办标题，可以导航到对应的 Block。</p>
+<p>退出：点击待办抽屉右上角 <span class="docs-emoji">&#x274C;</span> 或按下键盘的<code v-pre>Esc</code>。</p>
 
                                 
                                 <!-- Required only on API pages -->
