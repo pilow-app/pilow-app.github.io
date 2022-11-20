@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.719163491884">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.722266749720">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.719163491884" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.722266749720" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.719163491884" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.722266749720" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.719163491884" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.722266749720" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -55,7 +55,7 @@
                                 <img class="max-h-10 hidden dark:inline-block" src="../../static/favicon.ico">
                             </span>
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Pilow</span>
-                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v0.08</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v0.09</span>
                     </div>
         
                     <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
@@ -243,6 +243,18 @@
 <p>此时可以看到右侧出现所有未完成的细项，这里并没有以 Block 为单位，而是采用了更小的粒度也即 Markdown 中的 Checklist。</p>
 <p>选择相应的待办标题，可以导航到对应的 Block。</p>
 <p>退出：点击待办抽屉右上角 <span class="docs-emoji">&#x274C;</span> 或按下键盘的<code v-pre>Esc</code>。</p>
+<p>从版本 <code v-pre>v0.09</code> 开始，「待办抽屉」也会显示当日截止的待办，具体方式参考下一节。</p>
+<doc-anchor-target id="定时待办">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#定时待办">#</doc-anchor-trigger>
+        <span>定时待办</span>
+    </h2>
+</doc-anchor-target>
+<p>一个未完成的待办任务可以以 	<code v-pre>@截止日期</code> 的形式包含该任务的截止时间，Pilow 会在截止日期当日在右下角提示当日该完成的任务，点击它将打开上一节的「待办抽屉」。</p>
+<p>比如</p>
+<p><code v-pre>-[ ] 完成一个有截止日期的事项 @20221122</code></p>
+<p>则在2022年11月22日当日，Pilow将在右下角显示：</p>
+<p><code v-pre>💡 1 个今日截止事项</code></p>
 
                                 
                                 <!-- Required only on API pages -->
